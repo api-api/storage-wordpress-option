@@ -2,7 +2,7 @@
 /**
  * Storage loader.
  *
- * @package APIAPIStorageWordPressOption
+ * @package APIAPI\Storage_WordPress_Option
  * @since 1.0.0
  */
 

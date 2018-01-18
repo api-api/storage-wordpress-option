@@ -2,7 +2,7 @@
 /**
  * Storage_WordPress_Option class
  *
- * @package APIAPIStorageWordPressOption
+ * @package APIAPI\Storage_WordPress_Option
  * @since 1.0.0
  */
 
@@ -22,7 +22,6 @@ if ( ! class_exists( 'APIAPI\Storage_WordPress_Option\Storage_WordPress_Option' 
 		 * Gets the array values are stored in.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 *
 		 * @param string $basename The basename under which to store.
 		 * @return array Array with stored data.
@@ -35,12 +34,11 @@ if ( ! class_exists( 'APIAPI\Storage_WordPress_Option\Storage_WordPress_Option' 
 		 * Updates the array values are stored in.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 *
 		 * @param string $basename The basename under which to store.
 		 * @param array  $data     Array with updated data.
 		 */
-		protected function update_array( $basename, $data ) {
+		protected function update_array( $basename, array $data ) {
 			update_option( $basename, $data );
 		}
 
@@ -48,7 +46,6 @@ if ( ! class_exists( 'APIAPI\Storage_WordPress_Option\Storage_WordPress_Option' 
 		 * Deletes the array values are stored in.
 		 *
 		 * @since 1.0.0
-		 * @access protected
 		 *
 		 * @param string $basename The basename under which to store.
 		 */
